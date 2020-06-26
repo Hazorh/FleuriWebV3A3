@@ -1,0 +1,119 @@
+h1 {
+	text-align: center;
+	font-size: 100px;
+	font-family: "Shakila";
+}
+
+h3 {
+	text-align: center;
+	font-size: 50px;
+	font-family: "Shakila";
+}
+
+body {
+	background-color: #E3C4BD;
+}
+
+@font-face {
+    font-family:"Shakila";
+    src:url("../police/Shakila.ttf") format("truetype");
+    font-display:auto;font-style:normal;font-size:large;
+}
+
+.image_acceuil {
+
+	text-align: center;
+}
+
+.bouton1 {
+	text-align: center;
+	border:none;
+	padding:10px 24px;
+	width: 50px;
+	border-radius:8px;
+	background:#D733FF;
+	font:bold 15px cursive;
+	color:#FFFFFF;
+	display: block;
+  	margin : auto;
+
+}
+
+.bouton1:hover {
+  background-color: #FF3333;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.bouton2 {
+	text-align: center;
+	border:none;
+	padding:10px 24px;
+	width: 50px;
+	border-radius:8px;
+	background:#D733FF;
+	font:bold 15px cursive;
+	color:#FFFFFF;
+	display: block;
+  	margin : auto;
+}
+
+.bouton2:hover {
+  background-color: #FF3333;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.bouton3 {
+	text-align: center;
+	border:none;
+	padding:10px 24px;
+	width: 150px;
+	border-radius:8px;
+	background:#D733FF;
+	font:bold 15px cursive;
+	color:#FFFFFF;
+	display: block;
+  	margin : auto;
+}
+
+.bouton3:hover {
+  background-color: #FF3333;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.bouton4 {
+	text-align: center;
+	border:none;
+	padding:10px 24px;
+	width: 50px;
+	border-radius:8px;
+	background:#D733FF;
+	font:bold 15px cursive;
+	color:#FFFFFF;
+	display: block;
+	margin : auto;
+}
+
+.bouton4:hover {
+  background-color: #FF3333;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+table
+{
+	margin: 0 auto;
+	width: 50%;
+}
+td
+{
+	text-align :center;
+	border: 1px solid black;
+	font-family: sans-serif;
+}
