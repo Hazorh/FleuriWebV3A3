@@ -9,31 +9,22 @@
 		<h1>Rosiers</h1>
 		<div class = "table_rosiers">
 			<table>
-  				<tr>
-    				<td>Référence</td>
-    				<td>Désignation</td>
-    				<td>Photo</td>
-    				<td>Prix</td>
-  				</tr>
-  				<tr>
-  					<td>r01</td>
-    				<td>1 pied spécial grandes fleurs</td>
-    				<td><img src="<?php echo base_url('assets/images/rosiers_gdefleur.jpg')?>" alt="Pied pour grandes fleurs"></td>
-    				<td>20,00€</td>
-  				</tr>
-  				<tr>
-  					<td>r02</td>
-    				<td>Une variété selectionnée pour son parfum</td>
-    				<td><img src="<?php echo base_url('assets/images/rosiers_parfum.jpg')?>" alt="Fleur odorante"></td>
-    				<td>9,00€</td>
-  				</tr>
-  				<tr>
-  					<td>r03</td>
-    				<td>Rosier arbuste</td>
-    				<td><img src="<?php echo base_url('assets/images/rosiers_arbuste.jpg')?>" alt="Rosiers arbuste"></td>
-    				<td>8,00€</td>
-  				</tr>
-  			</table>
+          <tr>
+            <td>Référence</td>
+            <td>Désignation</td>
+            <td>Photo</td>
+            <td>Prix</td>
+          </tr>
+          <?php foreach($produitrosier as $produitrosier){ ?>
+          <tr>
+            <td><?php echo $produitrosier->pdt_ref; ?></td>
+            <td><?php echo $produitrosier->pdt_designation; ?></td>
+            <td><img src="<?php echo $produitrosier->pdt_image; ?>" alt="Bulbes de begonias"></td>
+            <td><?php echo $produitrosier->pdt_prix; ?></td>
+          </tr>
+        <?php } ?>
+
+        </table>
 		</div>
 		<div class="bouton1">
 			<a href="<?php echo site_url(); ?>">Acceuil</a>

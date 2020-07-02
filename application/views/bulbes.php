@@ -15,24 +15,15 @@
     				<td>Photo</td>
     				<td>Prix</td>
   				</tr>
+          <?php foreach($produit as $produit){ ?>
   				<tr>
-  					<td>b01</td>
-    				<td>Bulbes de bégonias</td>
-    				<td><img src="<?php echo base_url('assets/images/bulbes_begonia.jpg')?>" alt="Bulbes de begonias"></td>
-    				<td>5,00€</td>
+  					<td><?php echo $produit->pdt_ref; ?></td>
+    				<td><?php echo $produit->pdt_designation; ?></td>
+    				<td><img src="<?php echo $produit->pdt_image; ?>" alt="Bulbes de begonias"></td>
+    				<td><?php echo $produit->pdt_prix; ?></td>
   				</tr>
-  				<tr>
-  					<td>b02</td>
-    				<td>10 bulbes de dahlias</td>
-    				<td><img src="<?php echo base_url('assets/images/bulbes_dahlia.jpg')?>" alt="Bulbes de dahlias"></td>
-    				<td>12,00€</td>
-  				</tr>
-  				<tr>
-  					<td>b03</td>
-    				<td>50 glaïeuls</td>
-    				<td><img src="<?php echo base_url('assets/images/bulbes_glaieul.jpg')?>" alt="Bulbes de begonias"></td>
-    				<td>9,00€</td>
-  				</tr>
+        <?php } ?>
+
   			</table>
 		</div>
 		<div class="bouton1">

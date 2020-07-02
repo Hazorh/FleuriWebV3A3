@@ -9,31 +9,22 @@
 		<h1>Plantes a massifs</h1>
 		<div class = "table_massifs">
 			<table>
-  				<tr>
-    				<td>Référence</td>
-    				<td>Désignation</td>
-    				<td>Photo</td>
-    				<td>Prix</td>
-  				</tr>
-  				<tr>
-  					<td>m01</td>
-    				<td>Lot de 3 marguerites</td>
-    				<td><img src="<?php echo base_url('assets/images/massif_marguerite.jpg')?>" alt="Lot de 3 marguerites"></td>
-    				<td>5,00€</td>
-  				</tr>
-  				<tr>
-  					<td>m02</td>
-    				<td>Pour un bouquet de 6 pensées</td>
-    				<td><img src="<?php echo base_url('assets/images/massif_pensee.jpg')?>" alt="Bouquet de pensées"></td>
-    				<td>6,00€</td>
-  				</tr>
-  				<tr>
-  					<td>m03</td>
-    				<td>Mélange varié de 10 plantes à massifs</td>
-    				<td><img src="<?php echo base_url('assets/images/massif_melange.jpg')?>" alt="Mélange varié de 10 plantes à massifs"></td>
-    				<td>15,00€</td>
-  				</tr>
-  			</table>
+          <tr>
+            <td>Référence</td>
+            <td>Désignation</td>
+            <td>Photo</td>
+            <td>Prix</td>
+          </tr>
+          <?php foreach($produitmassif as $produitmassif){ ?>
+          <tr>
+            <td><?php echo $produitmassif->pdt_ref; ?></td>
+            <td><?php echo $produitmassif->pdt_designation; ?></td>
+            <td><img src="<?php echo $produitmassif->pdt_image; ?>" alt="Bulbes de begonias"></td>
+            <td><?php echo $produitmassif->pdt_prix; ?></td>
+          </tr>
+        <?php } ?>
+
+        </table>
 		</div>
 		<div class="bouton1">
 			<a href="<?php echo site_url(); ?>">Acceuil</a>

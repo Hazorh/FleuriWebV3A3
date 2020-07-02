@@ -27,6 +27,9 @@
 		<div class="bouton4">
 			<a href="<?php echo site_url('acceuil/rosiers'); ?>">Rosiers</a>
 		</div>
+		<div class="bouton5">
+			<a href="<?php echo site_url('acceuil/login'); ?>">Login</a>
+		</div>
 		<br>
 	</body>
 </html>
